@@ -10,6 +10,7 @@
 		2D0DEB9026A973E2005BA64B /* UIFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0DEB8626A973E1005BA64B /* UIFrameWork.framework */; };
 		2D0DEB9526A973E2005BA64B /* UIFrameWorkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0DEB9426A973E2005BA64B /* UIFrameWorkTests.swift */; };
 		2D0DEB9726A973E2005BA64B /* UIFrameWork.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D0DEB8926A973E1005BA64B /* UIFrameWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D0DEBA126A97463005BA64B /* UIViewDesinger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0DEBA026A97463005BA64B /* UIViewDesinger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		2D0DEB8F26A973E2005BA64B /* UIFrameWorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIFrameWorkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D0DEB9426A973E2005BA64B /* UIFrameWorkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFrameWorkTests.swift; sourceTree = "<group>"; };
 		2D0DEB9626A973E2005BA64B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D0DEBA026A97463005BA64B /* UIViewDesinger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewDesinger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				2D0DEB8926A973E1005BA64B /* UIFrameWork.h */,
 				2D0DEB8A26A973E1005BA64B /* Info.plist */,
+				2D0DEBA026A97463005BA64B /* UIViewDesinger.swift */,
 			);
 			path = UIFrameWork;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				TargetAttributes = {
 					2D0DEB8526A973E1005BA64B = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 					2D0DEB8E26A973E2005BA64B = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D0DEBA126A97463005BA64B /* UIViewDesinger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		2D0DEB9B26A973E2005BA64B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Surya.UIFrameWork;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		2D0DEB9C26A973E2005BA64B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -387,6 +395,7 @@
 		2D0DEB9E26A973E2005BA64B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UIFrameWorkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +413,7 @@
 		2D0DEB9F26A973E2005BA64B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UIFrameWorkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
